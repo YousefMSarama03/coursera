@@ -1,0 +1,81 @@
+/* === Global Styles === */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+  }
+  
+  /* === Row container === */
+  .row {
+    width: 100%;
+  }
+  
+  /* === Section styles === */
+  section {
+    position: relative;
+    border: 1px solid black;
+    background-color: #f0f0f0;
+    padding: 40px 15px 15px 15px;
+    margin: 10px;
+  }
+  
+  /* === Section Title === */
+  .section-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 1px solid black;
+    padding: 5px 15px;
+    font-weight: bold;
+  }
+  
+  .chicken {
+    background-color: #ffcccb;
+  }
+  
+  .beef {
+    background-color: #c3e6cb;
+  }
+  
+  .sushi {
+    background-color: #bee5eb;
+  }
+  
+  /* === Desktop view (992px and above) === */
+  @media (min-width: 992px) {
+    .col {
+      float: left;
+      width: 33.33%;
+    }
+  }
+  
+  /* === Tablet view (768px to 991px) === */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .col-1, .col-2 {
+      float: left;
+      width: 50%;
+    }
+    .col-3 {
+      float: left;
+      width: 100%;
+    }
+  }
+  
+  /* === Mobile view (<= 767px) === */
+  @media (max-width: 767px) {
+    .col {
+      float: left;
+      width: 100%;
+    }
+  }
+  
